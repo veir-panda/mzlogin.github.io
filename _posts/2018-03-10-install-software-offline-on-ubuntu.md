@@ -1,3 +1,11 @@
+---
+layout: post
+title: 离线环境下在Ubuntu上安装软件
+categories: linux
+description: 离线环境下在Ubuntu上安装软件
+keywords: ubuntu, 离线安装
+---
+
 # 离线环境下在Ubuntu上安装软件
 
 在生产中，经常会遇到客户的环境处于保密或者其他条件限制的情况下，服务器不能联通公网，我们熟悉的例如apt-get/yum等一键安装软件的命令在此时就不能发挥作用。这次，偶然在一次搜索怎样离线安装一个软件时找到了一个方便很多的办法。在此记录，方便以后查阅。

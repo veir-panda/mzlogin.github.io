@@ -1,6 +1,14 @@
-# **Java中的回调机制**
+---
+layout: post
+title: Java中的回调机制
+categories: java
+description: Java中的回调机制
+keywords: java, callback
+---
 
-> 本文出自xiaanming的博客（http://blog.csdn.net/xiaanming/article/details/17483273）
+# Java中的回调机制
+
+> 本文出自[xiaanming的博客](http://blog.csdn.net/xiaanming/article/details/17483273)
 
 以前不理解什么叫回调，天天听人家说加一个回调方法啥的，心里想我草，什么叫回调方法啊？然后自己就在网上找啊找啊找，找了很多也不是很明白，现在知道了，所谓回调：就是A类中调用B类中的某个方法C，然后B类中反过来调用A类中的方法D，D这个方法就叫回调方法，这样子说你是不是有点晕晕的，其实我刚开始也是这样不理解，看了人家说比较经典的回调方式：
 
@@ -159,7 +167,7 @@ public class Test {
 
 现在来分析分析下Android View的点击方法onclick（）;我们知道onclick()是一个回调方法，当用户点击View就执行这个方法，我们用Button来举例好了
 
-## **Java回调机制在安卓中的应用**
+## Java回调机制在安卓中的应用
 ```
 //这个是View的一个回调接口  
 /** 

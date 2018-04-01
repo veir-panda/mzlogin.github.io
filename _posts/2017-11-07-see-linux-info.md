@@ -1,4 +1,12 @@
-# 查看 Linux服务器配置信息
+---
+layout: post
+title: 查看 Linux 服务器配置信息
+categories: linux
+description: 查看 Linux 服务器配置信息
+keywords: ubuntu, 配置信息
+---
+
+# 查看 Linux 服务器配置信息
 
 做测试的时候需要知道服务器的一些配置信息，下面记录查看服务器信息的方法。
 

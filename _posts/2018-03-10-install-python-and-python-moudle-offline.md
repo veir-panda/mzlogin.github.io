@@ -1,3 +1,11 @@
+---
+layout: post
+title: 离线环境下安装Python环境及相关库文件
+categories: Python
+description: 离线环境下安装Python环境及相关库文件
+keywords: Python环境, 离线安装
+---
+
 # 离线环境下安装Python环境及相关库文件
 
 Python版本分为2和3两大类，在一台机子上直接安装多个版本的Python会不利于切换，这里推荐一个Python包管理系统[Anaconda](https://www.anaconda.com/download/#linux),通过它能方便的安装Python环境和第三方库，切换不同的Python版本，还能很方便的离线安装。

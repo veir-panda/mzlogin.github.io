@@ -1,4 +1,12 @@
-# Ubuntu搭建Tale个人博客全部过程
+---
+layout: post
+title: Ubuntu搭建Tale个人博客
+categories: other
+description: Ubuntu搭建Tale个人博客
+keywords: Ubuntu, Tale, 个人博客
+---
+
+# Ubuntu搭建Tale个人博客
 
 一直以来，Java类型的动态博客相比静态博客都是处于劣势，即便现在也是一样。但作为一个写Java的码农，总是更青睐于Java自己写的博客。
 

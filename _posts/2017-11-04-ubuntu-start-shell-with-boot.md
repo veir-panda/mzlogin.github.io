@@ -1,3 +1,11 @@
+---
+layout: post
+title: buntu使用技之开机自启动
+categories: linux
+description: buntu使用技之开机自启动
+keywords: ubuntu, 开机启动
+---
+
 # Ubuntu使用技之开机自启动
 
 Ubuntu下开机自启动一个程序有2种方式：

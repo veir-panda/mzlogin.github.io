@@ -1,7 +1,17 @@
+---
+layout: post
+title: 巩固Java基础之Java8
+categories: java
+description: 巩固Java基础之Java8
+keywords: java8
+---
+
+# 巩固Java基础之Java8
+
 > 偶然看到一篇写Java8的文章，粗略看了一下，翻译自国外的一篇文章，写的还不错，但是原地址没有目录，所以转载到自己的博客方便阅读。
 > 原文[地址](http://www.jianshu.com/p/5b800057f2d8)，作者[杜琪](http://www.jianshu.com/u/28d7875c78df)，如有侵权，请留言，我会尽快删除。
 
-# 1. 简介
+## 1. 简介
 
 毫无疑问，Java 8是Java自Java 5（发布于2004年）之后的最重要的版本。这个版本包含语言、编译器、库、工具和JVM等方面的十多个新特性。在本文中我们将学习这些新特性，并用实际的例子说明在什么场景下适合使用。
 
@@ -13,11 +23,11 @@
 - 工具
 - 运行时（JVM）
 
-# 2. Java语言的新特性
+## 2. Java语言的新特性
 
 Java 8是Java的一个重大版本，有人认为，虽然这些新特性领Java开发人员十分期待，但同时也需要花不少精力去学习。在这一小节中，我们将介绍Java 8的大部分新特性。
 
-## 2.1 Lambda表达式和函数式接口
+### 2.1 Lambda表达式和函数式接口
 
 Lambda表达式（也称为闭包）是Java 8中最大和最令人期待的语言改变。它允许我们将函数当成参数传递给某个方法，或者把代码本身当作数据处理：函数式开发者非常熟悉这些概念。很多JVM平台上的语言（Groovy、Scala等）从诞生之日就支持Lambda表达式，但是Java开发者没有选择，只能使用匿名内部类代替Lambda表达式。
 
@@ -91,7 +101,7 @@ public interface FunctionalDefaultMethods {
 
 Lambda表达式作为Java 8的最大卖点，它有潜力吸引更多的开发者加入到JVM平台，并在纯Java编程中使用函数式编程的概念。如果你需要了解更多Lambda表达式的细节，可以参考官方文档。
 
-## 2.2 接口的默认方法和静态方法
+### 2.2 接口的默认方法和静态方法
 
 Java 8使用两个新概念扩展了接口的含义：默认方法和静态方法。默认方法使得接口有点类似traits，不过要实现的目标不一样。默认方法使得开发者可以在 不破坏二进制兼容性的前提下，往现存接口中添加新的方法，即不强制那些实现了该接口的类也同时实现这个新加的方法。
 
@@ -209,7 +219,7 @@ Following the com.javacodegeeks.java8.method.references.MethodReferences$Car@7a8
 如果想了解和学习更详细的内容，可以参考官方文档
 ```
 
-## 2.4 重复注解
+### 2.4 重复注解
 
 自从Java 5中引入注解以来，这个特性开始变得非常流行，并在各个框架和项目中被广泛使用。不过，注解有一个很大的限制是：在同一个地方不能多次使用同一个注解。Java 8打破了这个限制，引入了重复注解的概念，允许在同一个地方多次使用同一个注解。
 
@@ -260,7 +270,7 @@ filter2
 
 如果你希望了解更多内容，可以参考官方文档。
 
-## 2.5 更好的类型推断
+### 2.5 更好的类型推断
 
 Java 8编译器在类型推断方面有很大的提升，在很多场景下编译器可以推导出某个参数的数据类型，从而使得代码更为简洁。例子代码如下：
 ```java
@@ -292,7 +302,7 @@ public class TypeInference {
 
 参数`Value.defaultValue()`的类型由编译器推导得出，不需要显式指明。在Java 7中这段代码会有编译错误，除非使用`Value.<String>defaultValue()`。
 
-## 2.6 拓宽注解的应用场景
+### 2.6 拓宽注解的应用场景
 
 Java 8拓宽了注解的应用场景。现在，注解几乎可以使用在任何元素上：局部变量、接口类型、超类和接口实现类，甚至可以用在函数的异常定义上。下面是一些例子：
 ```java
@@ -326,9 +336,9 @@ public class Annotations {
 `
 ElementType.TYPE_USER`和`ElementType.TYPE_PARAMETER`是Java 8新增的两个注解，用于描述注解的使用场景。Java 语言也做了对应的改变，以识别这些新增的注解。
 
-# 3. Java编译器的新特性
+## 3. Java编译器的新特性
 
-## 3.1 参数名称
+### 3.1 参数名称
 
 为了在运行时获得Java程序中方法的参数名称，老一辈的Java程序员必须使用不同方法，例如`Paranamer liberary`。Java 8终于将这个特性规范化，在语言层面（使用反射API和`Parameter.getName()`方法）和字节码层面（使用新的`javac`编译器以及`-parameters`参数）提供支持。
 ```java
@@ -373,11 +383,11 @@ Parameter: args
 </plugin>
 ```
 
-# 4. Java官方库的新特性
+## 4. Java官方库的新特性
 
 Java 8增加了很多新的工具类（date/time类），并扩展了现存的工具类，以支持现代的并发编程、函数式编程等。
 
-## 4.1 Optional
+### 4.1 Optional
 
 Java应用中最常见的bug就是空值异常。在Java 8之前，Google Guava引入了`Optionals`类来解决`NullPointerException`，从而避免源码被各种`null`检查污染，以便开发者写出更加整洁的代码。Java 8也将`Optional`加入了官方库。
 
@@ -421,7 +431,7 @@ Hey Tom!
 
 如果想了解更多的细节，请参考官方文档。
 
-## 4.2 Streams
+### 4.2 Streams
 
 新增的`Stream API`（java.util.stream）将生成环境的函数式编程引入了Java库中。这是目前为止最大的一次对Java库的完善，以便开发者能够写出更加有效、更加简洁和紧凑的代码。
 
@@ -559,7 +569,7 @@ try( Stream< String > lines = Files.lines( path, StandardCharsets.UTF_8 ) ) {
 
 `Stream`的方法`onClose` 返回一个等价的有额外句柄的`Stream`，当Stream的`close（）`方法被调用的时候这个句柄会被执行。Stream API、Lambda表达式还有接口默认方法和静态方法支持的方法引用，是Java 8对软件开发的现代范式的响应。
 
-## 4.3 Date/Time API(JSR 310)
+### 4.3 Date/Time API(JSR 310)
 
 Java 8引入了新的Date-Time API(JSR 310)来改进时间、日期的处理。时间和日期的管理一直是最令Java开发者痛苦的问题。`java.util.Date`和后来的`java.util.Calendar`一直没有解决这个问题（甚至令开发者更加迷茫）。
 
@@ -677,7 +687,7 @@ jdk.nashorn.api.scripting.NashornScriptEngine
 Result: 2
 ```
 
-## 4.5 Base64
+### 4.5 Base64
 
 对Base64编码的支持已经被加入到Java 8官方库中，这样不需要使用第三方库就可以进行Base64编码，例子代码如下：
 
@@ -715,7 +725,7 @@ Base64 finally in Java 8!
 (Base64.getUrlEncoder() / Base64.getUrlDecoder(), Base64.getMimeEncoder() / Base64.getMimeDecoder())。
 ```
 
-## 4.6 并行数组
+### 4.6 并行数组
 
 Java8版本新增了很多新的方法，用于支持并行数组处理。最重要的方法是`parallelSort()`，可以显著加快多核机器上的数组排序。下面的例子论证了`parallexXxx`系列的方法：
 
@@ -749,7 +759,7 @@ Unsorted: 591217 891976 443951 424479 766825 351964 242997 642839 119108 552378
 Sorted: 39 220 263 268 325 607 655 678 723 793
 ```
 
-## 4.7 并发性
+### 4.7 并发性
 
 基于新增的`lambda`表达式和`steam`特性，为Java 8中为`java.util.concurrent.ConcurrentHashMap`类添加了新的方法来支持聚焦操作；另外，也为`java.util.concurrentForkJoinPool`类添加了新的方法来支持通用线程池操作（更多内容可以参考我们的并发编程课程）。
 
@@ -763,11 +773,11 @@ Java 8还添加了新的`java.util.concurrent.locks.StampedLock`类，用于支�
 - LongAdder
 
 
-# 5. 新的Java工具
+## 5. 新的Java工具
 
 Java 8提供了一些新的命令行工具，这部分会讲解一些对开发者最有用的工具。
 
-## 5.1 Nashorn引擎：jjs
+### 5.1 Nashorn引擎：jjs
 
 `jjs`是一个基于标准`Nashorn`引擎的命令行工具，可以接受js源码并执行。例如，我们写一个`func.js`文件，内容如下：
 ```java
@@ -786,7 +796,7 @@ print( f() + 1 );
 
 如果需要了解细节，可以参考官方文档。
 
-## 5.2 类依赖分析器：jdeps
+### 5.2 类依赖分析器：jdeps
 
 `jdeps`是一个相当棒的命令行工具，它可以展示包层级和类层级的Java类依赖关系，它以.class文件、目录或者Jar文件为输入，然后会把依赖关系输出到控制台。
 
@@ -819,17 +829,17 @@ org.springframework.core-3.0.5.RELEASE.jar -> C:\Program Files\Java\jdk1.8.0\jre
       
 更多的细节可以参考官方文档。
 
-# 6. JVM的新特性
+## 6. JVM的新特性
 
 使用Metaspace（JEP 122）代替持久代（PermGen space）。在JVM参数方面，使用`-XX:MetaSpaceSize`和`-XX:MaxMetaspaceSize`代替原来的`-XX:PermSize`和`-XX:MaxPermSize`。
 
-# 7. 结论
+## 7. 结论
 
 通过为开发者提供很多能够提高生产力的特性，Java 8使得Java平台前进了一大步。现在还不太适合将Java 8应用在生产系统中，但是在之后的几个月中Java 8的应用率一定会逐步提高（PS:原文时间是2014年5月9日，现在在很多公司Java 8已经成为主流，我司由于体量太大，现在也在一点点上Java 8，虽然慢但是好歹在升级了）。作为开发者，现在应该学习一些Java 8的知识，为升级做好准备。
 
 关于Spring：对于企业级开发，我们也应该关注Spring社区对Java 8的支持，可以参考这篇文章——Spring 4支持的Java 8新特性一览
 
-# 8. 参考资料
+## 8. 参考资料
 
 - What’s New in JDK 8
 - The Java Tutorials

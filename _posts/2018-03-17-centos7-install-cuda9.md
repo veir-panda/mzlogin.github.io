@@ -1,3 +1,11 @@
+---
+layout: post
+title: Centos7.4安装CUDA9.1
+categories: cuda
+description: Centos7.4安装CUDA9.1
+keywords: centos7, cuda9
+---
+
 # Centos7.4安装CUDA9.1
 
 ## 环境与说明

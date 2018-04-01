@@ -1,3 +1,13 @@
+---
+layout: post
+title: Ubuntu16查看启动日志
+categories: linux
+description: Ubuntu16查看启动日志
+keywords: ubuntu, 启动日日志
+---
+
+# Ubuntu16查看启动日志
+
 ubuntu 16版本没有了`/var/log/boot.log`这个系统启动日志16版可以使用下面的命令查看：
 
 ```

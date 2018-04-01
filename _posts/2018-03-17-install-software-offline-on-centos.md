@@ -1,3 +1,11 @@
+---
+layout: post
+title: Centos 离线安装软件
+categories: linux
+description: Centos 离线安装软件
+keywords: centos, 离线安装
+---
+
 # Centos 离线安装软件
 
 在前面的一篇文章中，我写了怎样在Ubuntu上离线安装软件，以及离线安装Python包的两篇文章，这里再加上一篇在Centos上离线安装的文章吧，作为这一系列的最后一篇

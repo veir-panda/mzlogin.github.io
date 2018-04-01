@@ -1,4 +1,12 @@
-Oracle数据库中的约束
+---
+layout: post
+title: Oracle数据库中的约束
+categories: datebase
+description: Oracle数据库中的约束
+keywords: Oracle, check, datebase, 数据库约束
+---
+
+# Oracle数据库中的约束
 -------------
 >注：本文参考自[文章](http://www.cnblogs.com/Ronger/archive/2011/10/10/2205515.html)
 

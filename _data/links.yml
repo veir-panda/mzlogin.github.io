@@ -1,20 +1,11 @@
-- name: 码志
-  url: http://mazhuang.org
+- name: 杜琪
+  url: http://www.jianshu.com/u/28d7875c78df
 
-- name: Connie 酱
-  url: https://connie99.github.io
+- name: 廖雪峰
+  url: https://www.liaoxuefeng.com/
 
-- name: 只宁静不致远
-  url: http://zxning.github.io
+- name: 温国兵
+  url: https://dbarobin.com/
 
-- name: Blog Something
-  url: http://chenxiaoyoyo.github.io
-
-- name: 日新亭
-  url: http://www.fengerzh.com/
-
-- name: 尧哥
-  url: http://www.shishuyao.com
-
-- name: 叮咚购
-  url: http://www.ringwang.com/
+- name: 王爵的技术博客
+  url: http://biezhi.me/

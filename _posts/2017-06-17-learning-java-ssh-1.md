@@ -1,11 +1,14 @@
-> 本文系学习SSH框架整合时的学习笔记，学习的内容为慕课网的[基于SSH实现员工管理系统之案例实现篇](http://www.imooc.com/learn/679)
+---
+layout: post
+title: Java学习笔记之SSH整合
+categories: java
+description: Java学习笔记之SSH整合
+keywords: java, ssh
+---
 
+# Java学习笔记之SSH整合
 
-----------
-
-
-准备
---
+## 准备
 
  1. 新建Web项目 	
  2. 引入SSH开发包 	
@@ -26,7 +29,7 @@
 		6. *.dao.impl
 
 
-开始
+## 开始
 --
 
  1. 创建实体类：实体类ID一般设置为Integer引用类型
@@ -52,15 +55,8 @@
 > 例如：在action中需要调用`serviceImpl`中的方法，需要先实例化一个类,就用到了`Spring`的依赖注入，这里采用`set`方法注入，先在`action`中声明`serviceImpl`变量，再为这个变量提供一个set方法，不要忘了在配置文件中装配`bean`
 
  10. 完了。
- 
 
-----------
-
-
-**开发中遇到的坑**
--------
-
-	
+## 开发中遇到的坑
 
  - `userAction`中继承了`ModelDriven`的类，要重写`getModel()`方法，而该方法不能直接返回user类，可以在方法里面写上：
 ```java

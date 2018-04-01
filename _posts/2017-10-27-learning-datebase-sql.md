@@ -1,4 +1,12 @@
-# 数据库之SQL提高
+---
+layout: post
+title: 巩固数据库基础之SQL
+categories: datebase
+description: 巩固数据库基础之SQL
+keywords: 数据库, with as, row_number() over()
+---
+
+# 巩固数据库基础之SQL
 
 最近在工作中写sql语句时，遇到了以前在学校学习sql过程中没见过的知识，在此记录。
 

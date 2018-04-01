@@ -1,3 +1,11 @@
+---
+layout: post
+title: MySQL表名大小写在Windows和Linux上的不同
+categories: datebase
+description: MySQL表名大小写在Windows和Linux上的不同
+keywords: mysql, 表名, 大小写
+---
+
 # MySQL表名大小写在Windows和Linux上的不同
 
 今天将一个项目放到公司服务器上，在调试的时候突然发现系统登录不上去了，控制台报错代码“1146”，说表找不到，但是在我本地运行又是没问题的。由于数据非常大，折腾来折腾去搞了一下午。最后发现其实是MySQL本身的坑造成的。

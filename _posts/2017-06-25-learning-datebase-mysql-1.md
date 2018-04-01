@@ -1,5 +1,14 @@
-问题
---
+---
+layout: post
+title: 解决MySQl数据库查询不区分大小写
+categories: datebase
+description: 解决MySQl数据库查询不区分大小写
+keywords: datebase, mysql
+---
+
+# 解决MySQl数据库查询不区分大小写
+
+## 问题
 
 最近，在用SSH框架完成一个实践项目时，碰到了一个莫名其妙的Bug困扰了我好久，最后终于解决，记录如下。
 
@@ -17,8 +26,7 @@ select * from user where username = 'Admin' and password = 'admin';
 select * from user where username = 'ADMIN' and password = 'admin';
 ```
 
-解决方案
-----
+## 解决方案
 
 网上搜索到一篇相关的文章，写的挺好的，这里直接贴上该文章解释吧：
 
