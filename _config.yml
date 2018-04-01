@@ -2,11 +2,11 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://mazhuang.org
+url: https://veir.me
 date_format: "ordinal"
-title: 码志
+title: 熊伟的个人博客
 subtitle: "打码改变人生"
-description: "马壮的个人博客"
+description: "熊伟的个人博客"
 keywords: 码志, Zhuang Ma, mzlogin, mazhuang
 timezone: Asia/Shanghai
 encoding: "utf-8"
@@ -15,12 +15,12 @@ side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Zhuang Ma
+author: Veir
 organization: zkh360.com
 organization_url: http://www.zkh360.com
-github_username: mzlogin
-location: Wuhan, China
-email: chumpma@gmail.com
+github_username: veir-panda
+location: Chengdu, China
+email: veir.xw@gmail.com
 
 # ---------------- #
 #    Navigation    #
@@ -110,7 +110,7 @@ lazy_load_disqus : false
 # ---------------- #
 simple_jekyll_search:
     # 是否支持全文搜索
-    fulltext: false
+    fulltext: true
     # 最多显示多少条搜索结果
     limit: 10
 
