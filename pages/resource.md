@@ -9,7 +9,7 @@ permalink: /resource/
 ---
 
 <ul class="listing">
-{% for resource in site.resources %}
-<li class="listing-item"><a href="{{ site.url }}{{ resource.url }}" target="_blank">{{ resource.title }}</a></li>
+{% for resource in site.data.resources %}
+<li class="listing-item"><a href="{{ site.url }}{{ resource.url }}" target="_blank">{{ resource.name }}</a></li>
 {% endfor %}
 </ul>
