@@ -11,5 +11,5 @@ permalink: /links/
 > God made relatives. Thank God we can choose our friends.
 
 {% for link in site.data.links %}
-* <a href="{{ link.url }" target="_blank">{{ link.name }}</a>
+* <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
 {% endfor %}
